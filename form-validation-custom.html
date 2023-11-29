@@ -22,7 +22,6 @@
             class="form-control validate-input"
             type="text"
             name="first-name"
-            
           />
           <small class="error" aria-live="polite"></small>
         </div>
@@ -34,7 +33,6 @@
             class="form-control validate-input"
             type="text"
             name="last-name"
-            
           />
           <small class="error" aria-live="polite"></small>
         </div>
@@ -44,7 +42,7 @@
           <input
             id="email"
             class="form-control validate-input"
-            type="email"
+            type="text"
             name="email"
           />
           <small class="error" aria-live="polite"></small>
@@ -62,6 +60,28 @@
           <small class="error" aria-live="polite"></small>
         </div>
 
+        <div class="form-group hidden">
+          <label for="operating-system">Operating System</label>
+          <input
+            id="operating-system"
+            class="form-control validate-input"
+            type="text"
+            name="operating-system"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group hidden">
+          <label for="num-of-employees">Number of Employees</label>
+          <input
+            id="num-of-employees"
+            class="form-control validate-input"
+            type="number"
+            name="num-of-employees"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
         <div class="form-check mb-3">
           <input
             class="form-check-input"
@@ -75,7 +95,7 @@
 
         <div class="form-group">
           <label for="doge">How much DogeCoin u donate me?</label>
-          <input type="number" id="doge" min=20>
+          <input type="number" id="doge" min="20" />
         </div>
 
         <div class="form-group">

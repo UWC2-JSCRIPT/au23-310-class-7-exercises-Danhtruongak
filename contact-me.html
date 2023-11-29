@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Contact Me</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact-me.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <!-- TODO -->
+    <div class="container">
+      <div class="form-wrapper">
+        <form id="contact-form" action="">
+          <h1>Contact Information</h1>
+          <div class="form-group">
+            <label for="name"></label>
+            <input
+              id="name"
+              class="form-control validate-input"
+              type="text"
+              name="name"
+              placeholder="name"
+            />
+            <div>
+              <span class="error" id="error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="emailEl"></label>
+            <input
+              id="emailEl"
+              class="form-control validate-input"
+              type="text"
+              name="emailEl"
+              placeholder="email"
+            />
+            <div>
+              <span class="error" id="error"></span>
+            </div>
+          </div>
+          <div class="next">
+            <span> </span>
+          </div>
+
+          <div class="form-group">
+            <label for="kind">Contact Reason</label>
+            <select class="form-select" name="kind" id="contact-kind">
+              <option value="choose" selected="selected" disabled>
+                Choose one
+              </option>
+              <option value="Job-opportunity">Job Opportunity</option>
+              <option value="Talk-code">Talk code</option>
+            </select>
+          </div>
+
+          <div class="form-group hidden">
+            <label for="job-title"></label>
+            <input
+              id="job-title"
+              class="form-control validate-input"
+              type="text"
+              name="job-title"
+              placeholder="job-title"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group hidden">
+            <label for=""></label>
+            <input
+              id="website"
+              class="form-control validate-input"
+              type="text"
+              name="company-website"
+              placeholder="company-website"
+            />
+            <div>
+              <span class="error" id="error"></span>
+            </div>
+          </div>
+
+          <div class="form-group hidden">
+            <label for="kind">TALK CODE</label>
+            <select class="code-select" name="kind" id="code-select">
+              <option value="choose" selected="selected" disabled>
+                Choose one
+              </option>
+              <option value="job-opportunity">JavaScript</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="Jquery">Jquery</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group hidden">
+            <label for="name"></label>
+            <textarea
+              id="textarea"
+              name="message"
+              rows="2"
+              cols="40"
+              placeholder="your message"
+            >
+            </textarea>
+            <div>
+              <span class="error" id="error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input class="btn" type="submit" value="Sign up" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="contact-me.js"></script>
   </body>
 </html>
